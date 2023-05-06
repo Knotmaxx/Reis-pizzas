@@ -4,25 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzaria Vitoria</title>
+    <title>Rei's Pizzas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header>   
-        <nav class="navbar navbar-expand-sm bg-red py-0 px-3 position-fixed w-100 top-0">
-            <div class="container-fluid">
-                <div class="c-logo ">
-                    <img src="imgs/logo-vitoria-300x300.png" class="logo" alt="#logo">
-                </div>
-                <div class="c-icons  d-none-sm pe-5-sm  d-flex justify-content-center">
-                    <a class="elementor-icon p-2" href="https://www.facebook.com/pizzariavitorialafaiete/" target="_blank">
-                        <i aria-hidden="true" class="fab fa-facebook-square"></i>
-                    </a>
-                    <a class="elementor-icon p-2" href="https://www.instagram.com/pizzariavitorialafaiete/" target="_blank">
-                        <i class="fa-brands fa-square-instagram" ></i>			
-                    </a>     
+    <div class="fundo">
+
+    </div>   
+        <nav class="navbar navbar-expand-md py-0 px-3  w-100 top-0 bg-black">
+            <div class="container-fluid"> 
+                <div class="c-logo d-flex ">
+                    <img src="imgs/logo/logo_Reis.jpg" class="logo " alt="logo Rei's Pizzas">
                 </div>
                 <button class="navbar-toggler btn bg-warning btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -30,28 +24,288 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                         <li class="nav-item">
-                            <a class="nav-link fs-4 " aria-current="page" href="#">EMPRESA</a>
+                            <a class="nav-link fs-3 btn btn-dark" aria-current="page" href="#home">EMPRESA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-4  " href="#">CARDÁPIO</a>
+                            <a class="nav-link fs-3  btn btn-dark" href="#sobre">SOBRE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-4  " href="#" >SOBRE</a>
+                            <a class="nav-link fs-3  btn btn-dark" href="#cardapio" >CARDÁPIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-4 border-bottom-5" href="#">PRODUTOS</a>
+                            <a class="nav-link fs-3  btn btn-dark" href="#depoimentos">DEPOIMENTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-3 border-bottom-5 btn btn-dark" href="#contato">CONTATO</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     
-    <section class="home">
-       <div class="c-home">
-            <p>Escolha o sabor, que fazemos pra você com Amor.</p>
-            <img src="imgs/128x128.png" alt="icone pizza" class="icon-pizza">
-       </div>
-    </section>
+        <section class="home" id="home">
+            <div class="c-home bg-black">
+                <header>
+                    <h2>Rei's Pizzas</h2>
+                </header> 
+                <p class="fs-3 text text-white">Aprecie a Realeza gastronômica, escolha sua pizza digna como um <span>Rei</span>, faça seu pedido!</p>
+                <button class="btn btn-dark w-100 fs-2 text-green">PEDIDO</button>
+            </div>
+        </section>
+        <section class="about" id="sobre">
+            <img class="about-img" src="imgs/fundo/fundo about/japanese-3723045_1920.jpg" alt="foto pizzaria"></img>
+            <div class="c-about">
+                <header>
+                    <h2 class="title">Sobre Nós</h2>
+                </header>
+                <p class="about-text text fs-3">
+                    Bem-vindo ao Catálogo da pizzaria Rei, 
+                    onde a realeza é o nosso lema e a qualidade é a nossa marca registrada.
+                     Com mais de 20 anos de experiência, 
+                     nós sabemos o que é preciso para fazer a pizza perfeita e estamos dedicados a proporcionar a você uma experiência gastronômica incrível.
+                     Temos muitas promoções em nosso catálogo que vão deixar você com água na boca!
+                </p>
+            </div>
+        </section>
+        <section class="menu " id="cardapio">
+            <header>
+                <h1 class="title text-center">Nosso Cardápio</h1>
+            </header>
+            <div class="c-menu_text"> 
+                <p class="menu-text text fs-3  text-center"> 
+                    Confira nosso Cardápio, onde o sabor é a coroa e a qualidade é o trono. 
+                    Oferecemos uma ampla variedade de pizzas frescas e saborosas, 
+                    feitas com ingredientes cuidadosamente selecionados para agradar a todos os paladares.
+                </p>
+            </div>
+            <div class="menu-pizzas">
+                <div class="menu-pizza-top">
+                    <div class="menu-pizza">
+                        <img src="imgs/pizzas/pizza_4queijos.jpg" alt="pizza quatro queijos" class="menu-img">
+                        <div class="menu-pizza-about">
+                            <header>
+                                <h3 class="title menu-title">Quatro Queijos</h3>
+                            </header>
+                            <p class="text fs-5"> mistura de queijos como mussarela, parmesão, provolone e gorgonzola. Para quem ama queijo.
+                            </p>
+                            <div class="c-menu_btn">
+                                <p class="menu-price">R$40.00</p> <button class="btn btn-dark fs-4 w-100">Pedir</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-pizza">
+                        <img src="imgs/pizzas/pizza_mussarela.jpg" alt="pizza mussarela"  loading="lazy" class="menu-img">
+                        <div class="menu-pizza-about">
+                            <header>
+                                <h3 class="title menu-title">Mussarela</h3>
+                            </header>
+                            <p class="text fs-5"> A clássica e simples, coberta apenas com queijo mussarela e molho de tomate.
+                            </p>
+                            <div class="c-menu_btn">
+                                <p class="menu-price">R$36.80</p> <button class="btn btn-dark fs-4 w-100">Pedir</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-pizza">
+                        <img src="imgs/pizzas/pizza_pepperoni.jpg" alt="pizza pepperoni" loading="lazy" class="menu-img">
+                        <div class="menu-pizza-about">
+                            <header>
+                                <h3 class="title menu-title">Pepperoni</h3>
+                            </header>
+                            <p class="text fs-5"> Coberta com fatias de salame de pepperoni, molho de tomate, queijo e orégano. Saborosa e uma das mais populares.
+                            </p>
+                            <div class="c-menu_btn">
+                                <p class="menu-price">R$32.00</p> <button class="btn btn-dark fs-4 w-100">Pedir </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-pizza-bottom">
+                    <div class="menu-pizza">
+                        <img src="imgs/pizzas/pizza_torta.jpg" alt="pizza torta" loading="lazy" class="menu-img">
+                        <div class="menu-pizza-about">
+                            <header>
+                                <h3 class="title menu-title">Pizza Torta</h3>
+                            </header>
+                            <p class="text fs-5">Feita em uma forma alta, recheada com queijo, molho de tomate, presunto e outros ingredientes de sua preferência.
+                            </p>
+                            <div class="c-menu_btn">
+                                <p class="menu-price">R$30.50</p> <button class="btn btn-dark fs-4 w-100">Pedir</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-pizza">
+                        <img src="imgs/pizzas/pizza_vegetariana.jpg" alt="pizza vegetariana" loading="lazy" class="menu-img">
+                        <div class="menu-pizza-about">
+                            <header>
+                                <h3 class="title menu-title">Vegetariana</h3>
+                            </header>
+                            <p class="text fs-5"> Massa crocante, coberta com legumes como abobrinha, berinjela, pimentão e cogumelos. Ótima opção saudável.</p>
+                            <div class="c-menu_btn">
+                                <p class="menu-price">R$28.99</p> <button class="btn btn-dark fs-4 w-100">Pedir</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-pizza">
+                        <img src="imgs/pizzas/pizza_milho-verde.jpg" alt="pizza milho verde" loading="lazy" class="menu-img">
+                        <div class="menu-pizza-about">
+                            <header>
+                                <h3 class="title menu-title">Milho verde</h3>
+                            </header>
+                            <p class="text fs-5"> Coberta com milho verde, queijo e molho de tomate. Opção mais doce e diferente.
+                            </p>
+                            <div class="c-menu_btn">
+                                <p class="menu-price">R$42.00</p> <button class="btn btn-dark fs-4 w-100">Pedir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="carousel" id="depoimentos">
+            <header>
+                <h3 class="title text-center  ">Depoimentos</h3>
+            </header>
+            <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item carrousel-cards active">
+                    <div class="cards-wrapper">
+                        <div class="card">
+                            <div class="card-body">
+                                <div>
+                                    <h5 class="card-title ">Fernanda Rodrigues</h5><img src="imgs/depoimentos/google-1088004_1280.png" alt="">
+                                </div>
+                                <i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i><i class="fa-regular fa-star"></i>
+                                <p class="card-text fs-4">A pizza de pepperoni da Rei's é simplesmente incrível, com uma crocância perfeita por fora e maciez por dentro. Recomendo!</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                   <div class="carousel-item carrousel-cards ">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title ">Pedro José</h5><img src="imgs/depoimentos/google-1088004_1280.png" alt="">
+                                    </div>
+                                    <i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i>
+                                    <p class="card-text fs-4">O atendimento na Rei's é excelente, sempre muito atencioso e prestativo. Me sinto em casa lá.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carrousel-cards ">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title ">Miguel Augusto</h5><img src="imgs/depoimentos/google-1088004_1280.png" alt="">
+                                    </div>
+                                    <i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i>
+                                    <p class="card-text fs-4">A variedade de sabores na Rei's é impressionante, sempre encontro algo novo para experimentar. Todos os sabores são deliciosos!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carrousel-cards ">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">João Pereira</h5><img src="imgs/depoimentos/google-1088004_1280.png" alt="">
+                                    </div>
+                                    <i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i><i class="fa-regular fa-star" ></i>
+                                    <p class="card-text fs-4">A entrega da Rei's é muito rápida e eficiente, sempre recebo minha encomenda quentinha e no prazo. Excelente serviço!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  <div class="carousel-item carrousel-cards">
+                    <div class="cards-wrapper">
+                        <div class="card">
+                            <div class="card-body">
+                                <div>
+                                    <h5 class="card-title">Paula Maria</h5><img src="imgs/depoimentos/google-1088004_1280.png" alt="">
+                                </div>
+                        
+                                <i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i>
+                                <p class="card-text fs-4">O ambiente na Rei's é muito aconchegante e acolhedor, perfeito para uma refeição em família ou com amigos. Adoro o clima lá!</p>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item carrousel-cards">
+                    <div class="cards-wrapper">
+            
+                        <div class="card">
+                            <div class="card-body">
+                                <div>
+                                    <h5 class="card-title ">Matheus Silva</h5><img src="imgs/depoimentos/google-1088004_1280.png" alt="">
+                                </div>
+                                <i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i><i class="fa-regular fa-star"></i>
+                                <p class="card-text fs-4">Os preços na Rei's são justos e acessíveis, considerando a qualidade das pizzas e o atendimento excelente. Recomendo sem dúvida!</p>
+                            </div>
+                      </div>
+                  </div>
+                </div>
+                
+                <button class="carousel-control-prev bg-warning" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next bg-warning" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="contact" id="contato">
+            <div class="contato-container">
+                <header>
+                    <h3 class="title text-center">Entre em contato</h3>
+                </header>
+                <div class="contact-c_icons">
+                    <i class="fa-regular fa-envelope" style="color: #cd1818;"></i></i> <i class="fa-solid fa-phone" style="color: #182030;"></i> <i class="fa-brands fa-whatsapp" style="color: #16d42c;"></i> <i class="fa-brands fa-facebook" style="color: #005eff;"></i>
+                </div>
+                <div class="contact-c_group">
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2730.110259226561!2d-46.687177092492746!3d-23.597354951520302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1682989572058!5m2!1spt-BR!2sbr" 
+                         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="contact-map">
+                        </iframe>
+                    </div>
+                    <form class="form row  needs-validation rounded-2 bg-smoke pb-3 " >
+                        <div>
+                            <label for="validationCustomUsername" class="form-label fs-3 ">Gmail:</label>
+                            <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="email" class="form-control fs-4" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                                Email invalido.
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label for="validationCustom01" class="form-label fs-3">Assunto:</label>
+                            <input type="text" class="form-control fs-4" id="validationCustom01" required>
+                            <div class="invalid-feedback">
+                            Assunto do Email.
+                            </div>
+                        </div>
+                        <div>
+                            <textarea class="form-control fs-4" placeholder="Sua mensagem aqui!" required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-dark btn-form fs-4 w-100" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    
+        <footer class="footer bg-black">
+           <p class="text text-center fs-4 m-0 p-3">Copyright © 2023 Knotmaxx</p> 
+        </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
