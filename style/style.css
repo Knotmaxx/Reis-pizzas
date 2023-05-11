@@ -29,7 +29,7 @@ body{
     height: 100vh;
     min-height: 600px;
     max-height: 900px;
-    background-image: url("/imgs/fundo/pizza-5163790_1920.jpg");
+    background-image: url("../imgs/fundo/pizza-5163790_1920.jpg");
     background-position: center;
     background-size: cover;
     filter: brightness(80%);
@@ -161,7 +161,7 @@ span{
 }
 
 .c-about{
-    background-image: url("/imgs/fundo/black.png");
+    background-image: url("../imgs/fundo/black.png");
     background-size: cover;
     padding: 30px;
     max-height: 400px;
@@ -195,7 +195,7 @@ span{
 .menu-pizza-about{
     padding: 20px;
     padding-bottom: 20px;
-    background: url("/imgs/fundo/black-listrado.jpg");
+    background: url("../imgs/fundo/black-listrado.jpg");
 }
 .menu-pizza-about .text{
     width: 100%;
