@@ -194,7 +194,7 @@ span{
 .menu-pizza-about{
     padding: 20px;
     padding-bottom: 20px;
-    background: linear-gradient(to bottom,#080808,#161616, #343333);
+    background: url("../imgs/fundo/black-listrado.jpg");
 }
 .menu-pizza-about .text{
     width: 100%;
