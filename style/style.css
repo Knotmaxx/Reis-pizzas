@@ -11,7 +11,7 @@ html{
     font-size: 62.5%;
     display: flex;
     justify-content: center;
-    scroll-padding-top: 100px;
+    scroll-padding-top: clamp(100px,12vw,150px);
 }
 body{
     width: 100%;
@@ -50,9 +50,6 @@ body{
     background: linear-gradient(to right, #2d3033, #000);
 }
 
-
-
-
 .body-home{
     width: 100%;
 }
@@ -66,7 +63,7 @@ a{
     position: fixed;
     z-index: 99999999;
     border-bottom: 4px solid #ffc107;
-    min-height: 100px;
+    min-height: 80px;
 }
 .nav-link{
     background-color:rgb(16, 164, 16);
@@ -83,7 +80,7 @@ a{
     padding: 5px 0px;
 }
 .logo{
-    width: clamp(110px,20vw,150px);
+    width: clamp(100px,12vw,150px);
     border-radius: 20px;
 }
 
@@ -466,11 +463,18 @@ i{
     .menu-pizza{
         display: flex;
         flex-direction:row; 
-        margin: 10px;
+        margin:10px;
     }
     .menu-pizza-bottom  .menu-pizza{
         flex-direction: row;
     }
+
+}
+@media screen and (max-width:500px){
+    .menu-pizza{
+        margin: 10px 0px;
+    }
+    
 
 }
 @media screen and (max-width: 560px){
