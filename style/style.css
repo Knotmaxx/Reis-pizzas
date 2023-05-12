@@ -27,7 +27,7 @@ body{
     height: 100vh;
     min-height: 600px;
     max-height: 900px;
-    background-image: url("../imgs/fundo/pizza-5163790_1920.jpg");
+    background-image: url("../imgs/fundo/fundo-home/pizza-5163790_1920.jpg");
     background-position: center;
     background-size: cover;
     filter: brightness(80%);
@@ -66,6 +66,7 @@ a{
     position: fixed;
     z-index: 99999999;
     border-bottom: 4px solid #ffc107;
+    min-height: 100px;
 }
 .nav-link{
     background-color:rgb(16, 164, 16);
@@ -368,7 +369,14 @@ i{
 .footer{
     border-top: 4px solid #ffc107;
 }
+@media screen and (max-width: 767px){
+    .fundo{
+        background: url("../imgs/fundo/fundo-home/fundo-home-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
+}
 
 @media screen and (max-width: 575px){
     .fundo{
